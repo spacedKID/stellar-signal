@@ -20,6 +20,6 @@ def check_observatory_status(url):
         return "Observatory status not found."
 
 # Example usage
-observatory_url = "https://observatory.astro.utah.edu/"
-status = check_observatory_status(observatory_url)
-print(status)
+# observatory_url = "https://observatory.astro.utah.edu/"
+# status = check_observatory_status(observatory_url)
+# print(status)
