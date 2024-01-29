@@ -39,20 +39,6 @@ def get_stargazing_forecast(api_key, latitude, longitude):
         print(f"Failed to retrieve data: {response.status_code}")
         return None
 
-def get_stargazing_forecast(api_key, latitude, longitude):
-    url = f"https://api.stormglass.io/v2/astronomy/point?lat={latitude}&lng={longitude}"
-
-    headers = {
-        'Authorization': api_key
-    }
-
-    response = requests.get(url, headers=headers)
-
-    if response.status_code == 200:
-        return response.json()
-    else:
-        print(f"Failed to retrieve data: {response.status_code}")
-        return None
 
 def find_next_wednesday():
     today = datetime.utcnow().date()
